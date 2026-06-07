@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import { Cat, MessageSquare, User, Clock, Hash, ExternalLink, Github } from 'lucide-react'
+import { useEffect, useState } from 'react'
+import { Cat, User, Clock, Hash, ExternalLink } from 'lucide-react'
 
 interface ChronicleEvent {
   ts: string
@@ -43,13 +43,13 @@ function App() {
           </div>
         </div>
         <a 
-          href="https://github.com/axezii/chronicle" 
+          href="https://github.com/thebuilderofmoebius9/oracle-chronicle-ui" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="p-2 hover:bg-cat-dark rounded-xl transition-colors"
+          className="p-2 hover:bg-cat-dark rounded-xl transition-colors flex items-center gap-2 text-sm font-bold"
           aria-label="GitHub Repository"
         >
-          <Github className="w-6 h-6" />
+          REPO <ExternalLink className="w-4 h-4" />
         </a>
       </header>
 
